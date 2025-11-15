@@ -8,8 +8,11 @@
   "devDependencies": {
     "concurrently": "^9.2.1"
   },
-  "scripts": {
-    "build": "sass ./src/scss/custom.scss ./src/css/custom.css && eleventy",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preBuild": "sass ./src/scss/custom.scss ./src/css/custom.css",
+    "postBuild": "eleventy",
+    "build": "npm run preBuild && npm run postBuild",
     "serve": "npm run build && concurrently \"eleventy --serve --quiet\" \"sass --watch ./src/scss/custom.scss ./src/css/custom.css\""
   }
 }

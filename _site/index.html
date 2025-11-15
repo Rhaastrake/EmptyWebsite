@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme="dark">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teloriparo - Homepage</title>
+    <title>Telofixo - Homepage</title>
+    <meta
+      name="description"
+      content="Assistenza PC e consulenza informatica per privati e aziende. Risoluzione problemi, ottimizzazione e supporto dedicato."
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Asimovian&family=Cal+Sans&family=Edu+SA+Hand:wght@400..700&family=IM+Fell+English+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quando&family=Rationale&family=Tillana:wght@400;500;600;700;800&display=swap"
@@ -20,7 +24,6 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/custom.css" />
 
     <link
       rel="shortcut icon"
@@ -32,69 +35,82 @@
 
   <body>
     <header>
-      <div class="logo"><h1>Teloriparo.it</h1></div>
-      <div class="burger">&#9776;</div>
-      <nav class="nav-links">
-        <a href="#">Notizie</a>
-        <a href="#features-prices">Prezzi e servizi</a>
-        <a href="#">Chi siamo</a>
-        <a href="#">FAQ</a>
-      </nav>
-      <div class="extrabuttons">
-        <button class="btn">Admin</button>
-        <button class="btn bi-bug-fill" data-bs-toggle="modal" data-bs-target="#bugReportModal"></button>
-        <button class="btn bi bi-clipboard2-check"  data-bs-toggle="modal" data-bs-target="#privacyInfoModal"></button>
-      </div>
-    </header> <section class="service">
+  <nav class="container">
+    <div class="logo neon-blue">
+      <a
+        href="http://michelegarofalo.gt.tc"
+        style="font-weight: 400; font-size: 2.5rem; text-decoration: none"
+        >Telofixo.it</a
+      >
+    </div>
+    <div class="nav-buttons">
+      <a class="disabled-btn" href="http://www.michelegarofalo.gt.tc/about"
+        >Notizie</a
+      >
+      <a href="#features-prices">Prezzi e servizi</a>
+      <a href="http://www.michelegarofalo.gt.tc/about"
+        >Chi siamo</a
+      >
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="burger" id="burger-menu">
+      <i class="bi bi-list"></i>
+    </div>
+  </nav>
+</header>
+
+    <main>
+      <section id="form-section">
   <div class="container">
-    
-    
-            
-        
     <div class="row pt-4" id="service">
       <div class="col-xl-7 col-12">
-        <div class="service-content fade show">
-          <h2><i class="bi bi-info-circle"></i> Richiedi subito una consulenza!</h2>
+        <div class="form-section-content fade show">
+          <h1 class="neon-blue" style="font-size: 2rem;"><i class="bi bi-info-circle"></i> Richiedi subito una consulenza!</h1>
           <ul style="font-size: 1.2rem">
             <li><p>Compila il form</p></li>
             <li><p>Mettiamoci in contatto</p></li>
             <li><p>Incontriamoci</p></li>
             <li><p>Accendi il tuo PC e gioca</p></li>
           </ul>
-          <button class="btn" id="openFormBtn">Compila il form</button>
+          <button id="openFormBtn" class="btn">Compila il form</button>
         </div>
-    <div class="service-form fade d-none" id="main-form">
-      <h2>Di cosa hai bisogno?</h2>
-      <ul style="font-size: 1.2rem">
-        <li><span><p class="service-form-btn" data-choice="newpc">Ho bisogno di un nuovo PC</p></span></li>
-        <li><p class="service-form-btn" data-choice="assistance">Ho bisogno di assistenza</p></li>
-      </ul>
-    </div>
+
+        <div class="form-section-form fade d-none" id="main-form">
+          <h2 class="neon-blue">Di cosa hai bisogno?</h2>
+          <ul style="font-size: 1.2rem">
+            <li><p class="form-section-form-btn" data-choice="newpc">Ho bisogno di un nuovo PC</p></li>
+            <li><p class="form-section-form-btn" data-choice="assistance">Ho bisogno di assistenza</p></li>
+          </ul>
+        </div>
       </div>
+
       <div class="col-xl-5 col-12">
-        <div class="service-image">
-          <img src="/assets/images/gaming-desk.jpg" />
+        <div class="form-section-image">
+          <img src="/assets/images/gaming-desk.jpg" fetchpriority="high"/>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> 
 
+      <hr class="container" />
 
-    <hr class="container" />
-
-    <section class="news">
+      <section class="news" id="news">
   <div class="container">
-    <h2><i class="bi bi-envelope-paper"></i> Notizie</h2>
+    <h2 class="neon-blue"><i class="bi bi-envelope-paper"></i> Notizie</h2>
     <div class="row pb-5">
-
       <div class="col-xl-6 col-12">
-        <a href="teloriparo.it/news/notizia-1.html" class="news-card">
+        <a class="clickable disabled-btn news-card mb-3">
           <div class="row">
             <div class="col-8">
               <h3>Giuseppe Pallone, volevo dirti che...</h3>
             </div>
-            <div class="col-2" style="background-color: pink">Immagine</div>
+            <div class="col-2">
+              <img
+                src="assets/images/elio.jpg"
+                style="width: 100%; height: auto; border-radius: 5px"
+              />
+            </div>
             <div class="col-2" style="text-align: right">
               <h6>01/09/25</h6>
               <h6>Antonio</h6>
@@ -113,15 +129,20 @@
       </div>
 
       <div class="col-xl-6 col-12">
-        <a href="teloriparo.it/news/notizia-2.html" class="news-card">
+        <a class="clickable disabled-btn news-card mb-3">
           <div class="row">
             <div class="col-8">
               <h3>Giuseppe Pallone miete altre vittime a Modugno</h3>
             </div>
-            <div class="col-2" style="background-color: pink">Immagine</div>
+            <div class="col-2">
+              <img
+                src="assets/images/elio.jpg"
+                style="width: 100%; height: auto; border-radius: 5px"
+              />
+            </div>
             <div class="col-2" style="text-align: right">
               <h6>02/09/25</h6>
-              <h6>Kekko</h6>  
+              <h6>Kekko</h6>
             </div>
             <div>
               <p class="mt-3">
@@ -135,7 +156,6 @@
           <div class="news-overlay">Leggi tutto</div>
         </a>
       </div>
-
     </div>
   </div>
 </section>
@@ -143,16 +163,16 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-6 col-12">
-        <h2>Perchè scegliere noi</h2>
+        <h2 class="neon-blue">Perchè scegliere noi</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <i class="bi bi-activity"></i>
-            <h3>Efficienza</h3>
+            <i class="bi bi-activity neon-pink"></i>
+            <h3 class="neon-blue">Efficienza</h3>
             <p>Ci teniamo ad essere veloci e precisi cercando sempre di guidare il cliente verso la scelta più conveniente possibile</p>
           </div>
           <div class="feature-card">
-            <i class="bi bi-chat-dots-fill"></i>
-            <h3>Reperibilità</h3>
+            <i class="bi bi-chat-dots-fill neon-pink"></i>
+            <h3 class="neon-blue">Reperibilità</h3>
             <p>Siamo disponibili a chiarire qualsiasi dubbio, in qualsiasi momento, sia prima che dopo l’accordo, per garantire la migliore esperienza</p>
           </div>
         </div>
@@ -163,7 +183,7 @@
 
 
       <div class="col-xl-6 col-12">
-        <h2>Prezzi e servizi</h2>
+        <h2 class="neon-blue">Prezzi e servizi</h2>
         <div class="prices">
           <h5><i class="bi bi-amazon"></i> Guida all'acquisto: €10</h5>
           <p class="pt-2">
@@ -188,39 +208,218 @@
     </div>
   </div>
 </section>
-     <footer>
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4><i class="bi bi-geo-alt"></i> Contatti</h3>
-          <p>teloriparo@gmail.com</p>
+ <section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-container">
+      <h2 class="neon-blue">Domande Frequenti</h2>
+      <p>Per altre domande: <b>telofixo.it@gmail.com</b></p>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Quali sono i tempi di risposta?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Rispondo appena possibile, solitamente entro poche ore,
+                compatibilmente con i miei impegni
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="footer-col">
-            <h4><i class="bi bi-globe"></i> Social</h4>
-          <div class="social-links">
-            <p>
-              <a href="#"><i class="bi bi-telegram"></i> Telegram</a>
-            </p>
-            <p>
-              <a href="#"><i class="bi bi-discord"></i> Discord</a>
-            </p>
-            <p>
-              <a href="#"><i class="bi bi-github"></i> Github</a>
-            </p>
-            <p>
-              <a href="#"><i class="bi bi-linkedin"></i> Linkedin</a>
-            </p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Come posso pagare?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p>Accetto contanti, bonifico e paypal</p>
+              <p><b>IMPORTANTE:</b> <u>Non ho modo di dare alcuna ricevuta!</u></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Devo portare fisicamente il PC?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Non sempre è necessario: alcuni problemi possono essere risolti
+                da remoto. Se serve un intervento diretto, ci si può accordare
+                anche per un ritiro a domicilio, con rimborso benzina
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              Abito fuori dalla puglia, cosa posso fare?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Contattami comunque. Se il problema si può risolvere a distanza,
+                ti aiuterò. Altrimenti, posso darti consigli utili gratuitamente
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              Come vengono conservati i dati che invio?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p>
+                Tutti i dati forniti vengono inviati via email a
+                <b>telofixo.it@gmail.com</b> e trattati nel rispetto della
+                privacy
+              </p>
+              <p>
+                <b>Se richiesto via email, i dati verranno elliminati</b>
+              </p>
+              <p>
+                <a
+                  type="button"
+                  class="btn-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#privacyInfoModal"
+                >
+                  Informativa sulla privacy
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <i class="bi bi-c-circle"></i> Parte del copyright
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer-custom bg-dark text-light">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-start">
+
+      <!-- Contatti -->
+      <div class="col-12 col-md-4 footer-col">
+        <h4 class="neon-blue"><i class="bi bi-geo-alt"></i> Contatti</h4>
+        <p>Telofixo.it@gmail.com</p>
       </div>
-    </footer> <div class="modal fade" id="bugReportModal" tabindex="-1" aria-hidden="true">
+
+      <!-- Social -->
+      <div class="col-12 col-md-4 footer-col">
+        <h4 class="neon-blue"><i class="bi bi-globe"></i> Social</h4>
+        <div class="social-links">
+          <a href="#"><i class="bi bi-telegram"></i> Telegram</a>
+          <a href="#"><i class="bi bi-discord"></i> Discord</a>
+          <a href="#"><i class="bi bi-github"></i> Github</a>
+          <a href="#"><i class="bi bi-linkedin"></i> Linkedin</a>
+        </div>
+      </div>
+
+      <!-- Altro -->
+      <div class="col-12 col-md-4 footer-col">
+        <h4 class="neon-blue"><i class="bi bi-tools"></i> Altro</h4>
+        <div class="extrabuttons">
+          <div><a class="clickable disabled-btn">Admin</a></div>
+          <div><a class="clickable disabled-btn">Segnala un bug</a></div>
+          <div>
+            <a class="clickable" data-bs-toggle="modal" data-bs-target="#privacyInfoModal">
+              Informativa privacy
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright text-center mt-4">
+      <i class="bi bi-c-circle"></i> 2025 Telofixo.it | Tutti i diritti riservati
+    </div>
+  </div>
+</footer>
+ <div class="modal fade" id="bugReportModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header border-bottom-0">
-        <h5 class="modal-title">Segnala un bug</h5>
+        <h5 class="modal-title neon-blue">Segnala un bug</h5>
         <button
           type="button"
           class="btn-close btn-close-white"
@@ -290,9 +489,9 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header border-bottom-0">
-        <h5 class="modal-title" id="privacyInfoModalLabel">
+        <h2 class="modal-title neon-blue" id="privacyInfoModalLabel">
           Informativa sulla privacy
-        </h5>
+        </h2>
         <button
           type="button"
           class="btn-close btn-close-white"
@@ -303,37 +502,16 @@
 
       <div class="modal-body">
         <p>
-          Compilando i vari moduli presenti nel sito, ci fornisci alcuni dati
-          personali (nome, cognome, email, città di residenza, numero di
-          telefono ed eventuali foto).
+          Per rispondere alle tue richieste, raccogliamo solo alcune informazioni dal form, come nome, cognome, numero di telefono e città di domicilio. Le risposte alle altre domande non includono dati sensibili.
         </p>
-        <p>Ti informiamo che:</p>
+        <p>I tuoi dati:</p>
         <ul>
-          <li>
-            <strong>Finalità del trattamento:</strong> i dati saranno utilizzati
-            esclusivamente per gestire la tua richiesta di assistenza o
-            segnalazione.
-          </li>
-          <li>
-            <strong>Modalità di trattamento:</strong> i dati vengono inviati
-            tramite email all'indirizzo
-            <a href="mailto:mgpcbari@gmail.com" class="text-info">teloriparo@gmail.com</a>.
-          </li>
-          <li>
-            <strong>Conservazione dei dati:</strong> i dati non verranno
-            archiviati in alcun database o sistema di memorizzazione
-            persistente. Saranno gestiti esclusivamente tramite email.
-          </li>
-          <li>
-            <strong>Condivisione dei dati:</strong> i dati non saranno condivisi
-            con terze parti.
-          </li>
-          <li>
-            <strong>Diritti dell'utente:</strong> puoi in qualsiasi momento
-            richiedere la cancellazione dei tuoi dati scrivendo a
-            <a href="mailto:mgpcbari@gmail.com" class="text-info">teloriparo@gmail.com</a>.
-          </li>
+          <li>Servono solo per contattarti e gestire la richiesta;</li>
+          <li>Vengono inviati via email a <span class="neon-blue">telofixo.it@gmail.com;</span></li>
+          <li>Non vengono conservati in database e non saranno condivisi con terzi;</li>
+          <li>Puoi chiedere la cancellazione dei tuoi dati in qualsiasi momento scrivendo alla stessa email.</li>
         </ul>
+        <p>In breve: usiamo i dati solo per aiutarti, nulla di più!</p>
       </div>
 
       <div class="modal-footer border-top-0">
@@ -344,18 +522,15 @@
     </div>
   </div>
 </div>
- <div id="notification" class="toast position-fixed top-auto bottom-0 start-50 translate-middle p-3" style="display: none;">
-  <div class="notification-body text-center">
 
-  </div>
-</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/css/custom.css" />
     <script src="js/header.js" defer></script>
-    <script src="js/forms.js" defer></script>
+    <script type="module" src="js/forms.js" defer></script>
   </body>
 </html>
