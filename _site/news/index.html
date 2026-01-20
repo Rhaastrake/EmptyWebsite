@@ -3,8 +3,8 @@
 <html lang="it">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teloriparo - News</title>
+    <meta name="description" content="Michelegaro.it: Assistenza tecnica per PC e sistemi informatici.">
+    <title>Michelegaro - Notizie</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Asimovian&family=Cal+Sans&family=Edu+SA+Hand:wght@400..700&family=IM+Fell+English+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quando&family=Rationale&family=Tillana:wght@400;500;600;700;800&display=swap"
@@ -30,30 +30,35 @@
     
   </head>
   <body>
-    <header>
-  <nav class="container">
-    <div class="logo neon-blue">
-      <a
-        href="http://michelegarofalo.gt.tc"
-        style="font-weight: 400; font-size: 2.5rem; text-decoration: none"
-        >Telofixo.it</a
-      >
-    </div>
-    <div class="nav-buttons">
-      <a class="disabled-btn" href="http://www.michelegarofalo.gt.tc/about"
-        >Notizie</a
-      >
-      <a href="#features-prices">Prezzi e servizi</a>
-      <a href="http://www.michelegarofalo.gt.tc/about"
-        >Chi siamo</a
-      >
-      <a href="#faq">FAQ</a>
-    </div>
-    <div class="burger" id="burger-menu">
-      <i class="bi bi-list"></i>
-    </div>
-  </nav>
-</header>
+    <div class="nav">
+  <a href="/" class="logo">
+    <img src="/assets/images/logo.png" alt="Logo" />
+  </a>
+  <div>
+    <a
+      class="modernButton"
+      href="https://github.com/rhaastrake"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="bi bi-github"> GitHub</i></a
+    >
+    <a
+      class="modernButton"
+      href="https://www.linkedin.com/in/michele-garofalo-1966302b6/"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="bi bi-linkedin"> LinkedIn</i></a
+    >
+  </div>
+  <div>
+    <a
+      class="modernButton"
+      data-bs-toggle="modal"
+      data-bs-target="#bugReportModal"
+      ><i class="bi bi-bug"> Segnala un bug</i></a
+    >
+  </div>
+</div>
 
 
     <main class="container">
@@ -62,48 +67,25 @@
       </h1>
     </main>
 
-    <footer class="footer-custom bg-dark text-light">
-  <div class="container">
-    <div class="row text-center text-md-start align-items-start">
-
-      <!-- Contatti -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-geo-alt"></i> Contatti</h4>
-        <p>Telofixo.it@gmail.com</p>
-      </div>
-
-      <!-- Social -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-globe"></i> Social</h4>
-        <div class="social-links">
-          <a href="#"><i class="bi bi-telegram"></i> Telegram</a>
-          <a href="#"><i class="bi bi-discord"></i> Discord</a>
-          <a href="#"><i class="bi bi-github"></i> Github</a>
-          <a href="#"><i class="bi bi-linkedin"></i> Linkedin</a>
-        </div>
-      </div>
-
-      <!-- Altro -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-tools"></i> Altro</h4>
-        <div class="extrabuttons">
-          <div><a class="clickable disabled-btn">Admin</a></div>
-          <div><a class="clickable disabled-btn">Segnala un bug</a></div>
-          <div>
-            <a class="clickable" data-bs-toggle="modal" data-bs-target="#privacyInfoModal">
-              Informativa privacy
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="copyright text-center mt-4">
-      <i class="bi bi-c-circle"></i> 2025 Telofixo.it | Tutti i diritti riservati
-    </div>
+    <div class="nav row">
+  <div class="col-xl-3 col-12">
+    <p>Copyright © 2026 Michele Garofalo. Tutti i diritti riservati.</p>
+    <p>
+      Prestazione occasionale.
+    </p>
   </div>
-</footer>
+  <div class="col-xl-3 col-12">
+    <a href="#serviceSection">Servizi</a><br />
+    <a href="#termsConditionsModal" data-bs-toggle="modal"
+      >Termini e condizioni</a>
+    <br>
+    <a href="#privacyInfoModal" data-bs-toggle="modal">Privacy</a>
+  </div>
+  <div class="col-xl-3 col-12">
+    <a href="https://github.com/rhaastrake" target="_blank">GitHub</a><br />
+    <a href="https://www.linkedin.com/in/michele-garofalo-1966302b6/" target="_blank">LinkedIn</a><br />
+  </div>
+</div>
 
 
     <script

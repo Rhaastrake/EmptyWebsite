@@ -1,53 +1,53 @@
-/* ===== Fade In Up ===== */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 40px, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+// /* ===== Fade In Up ===== */
+// @keyframes fadeInUp {
+//   0% {
+//     opacity: 0;
+//     transform: translate3d(0, 40px, 0);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translate3d(0, 0, 0);
+//   }
+// }
 
-.animate__fadeInUp {
-  animation-name: fadeInUp;
-  animation-duration: 0.75s;
-  animation-fill-mode: both;
-}
+// .animate__fadeInUp {
+//   animation-name: fadeInUp;
+//   animation-duration: 0.75s;
+//   animation-fill-mode: both;
+// }
 
-/* ===== Fade In Right ===== */
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(40px, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+// /* ===== Fade In Right ===== */
+// @keyframes fadeInRight {
+//   0% {
+//     opacity: 0;
+//     transform: translate3d(40px, 0, 0);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translate3d(0, 0, 0);
+//   }
+// }
 
-.animate__fadeInRight {
-  animation-name: fadeInRight;
-  animation-duration: 0.75s;
-  animation-fill-mode: both;
-}
+// .animate__fadeInRight {
+//   animation-name: fadeInRight;
+//   animation-duration: 0.75s;
+//   animation-fill-mode: both;
+// }
 
-/* ===== Fade Out Left ===== */
-@keyframes fadeOutLeft {
-  0% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(-40px, 0, 0);
-  }
-}
+// /* ===== Fade Out Left ===== */
+// @keyframes fadeOutLeft {
+//   0% {
+//     opacity: 1;
+//     transform: translate3d(0, 0, 0);
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: translate3d(-40px, 0, 0);
+//   }
+// }
 
-.animate__fadeOutLeft {
-  animation-name: fadeOutLeft;
-  animation-duration: 0.75s;
-  animation-fill-mode: both;
-}
+// .animate__fadeOutLeft {
+//   animation-name: fadeOutLeft;
+//   animation-duration: 0.75s;
+//   animation-fill-mode: both;
+// }

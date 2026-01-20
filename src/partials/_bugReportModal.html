@@ -1,63 +1,35 @@
-<div class="modal fade" id="bugReportModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-dark text-light">
+<div
+  class="modal fade"
+  id="bugReportModal"
+  tabindex="-1"
+  aria-labelledby="bugReportModal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
       <div class="modal-header border-bottom-0">
-        <h5 class="modal-title neon-blue">Segnala un bug</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Chiudi"
-        ></button>
+        <h2 class="modal-title" id="bugReportModal">
+          Segnala un bug
+        </h2>
       </div>
 
       <div class="modal-body">
-        <form
-          id="report-bug-form"
-          class="needs-validation"
-          name="bugReportForm"
-          method="POST"
-          novalidate
-        >
-          <input type="hidden" name="formType" value="bugReportForm" />
+        <form method="post" class="needs-validation" novalidate>
+    <input type="hidden" name="formType" value="bugReport">
+      <div class="form-floating mb-3">
+        <textarea class="form-control auto-expand" id="details" name="details" placeholder="Descrizione del problema" style="height:100px; resize:none;" required></textarea>
+        <label for="details">Descrizione del problema</label>
+      </div>
+      <p class="size-1">Ci tengo a ringraziare in anticipo per ogni contributo :)</p>
+      <button class="modernButton" type="submit">Invia segnalazione</button>
+    </form>
 
-          <div class="d-flex align-items-center">
-            <span class="bi bi-envelope me-2 fs-3"></span>
-            <div class="form-floating flex-grow-1">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="La tua email"
-                required
-              />
-              <label for="email">La tua email</label>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-center pt-3">
-            <span class="bi bi-text-left me-2 fs-3"></span>
-            <div class="form-floating flex-grow-1">
-              <input
-                type="text"
-                class="form-control"
-                id="bugDetails"
-                name="bugDetails"
-                placeholder="Descrivi il bug"
-                required
-              />
-              <label for="bugDetails">Descrivi il problema</label>
-            </div>
-          </div>
-
-          <div class="modal-footer border-top-0">
-            <button type="submit" class="btn">Invia segnalazione</button>
-            <button type="button" class="btn" data-bs-dismiss="modal">
-              Chiudi
-            </button>
-          </div>
-        </form>
+      <div class="modal-footer border-top-0">
+        <button type="button" class="modernButton" data-bs-dismiss="modal">
+          Chiudi
+        </button>
       </div>
     </div>
   </div>

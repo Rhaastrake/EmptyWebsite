@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telofixo - Homepage</title>
+    <title>MicheleGaro.it - Homepage</title>
     <meta
       name="description"
-      content="Assistenza PC e consulenza informatica per privati e aziende. Risoluzione problemi, ottimizzazione e supporto dedicato."
+      content="Assistenza tecnica per PC e sistemi informatici."
     />
 
     <link
@@ -27,24 +27,29 @@
 
     <link
       rel="shortcut icon"
-      href="src/public/favicon.ico"
+      href="favicon.ico"
       type="image/x-icon"
     />
     {% set partials = "src/partials/" %}
   </head>
 
   <body>
-    {% include "_header.html" %}
-    <main>
-      {% include "_formSection.html" %}
-
-      <hr class="container" />
-
-      {% include "_news.html" %} {% include "_featuresPrices.html" %} {%
-      include "_faq.html" %}
+    <header>
+      {% include "_header.html" %}
+    </header>
+    <main class="container">
+      {% include "_presentation.html" %}
+      {% include "_services.html" %}
+      {% include "_news.html" %}
+      {% include "_faq.html" %}
     </main>
-    {% include "_footer.html" %} {% include "_bugReportModal.html" %} {% include
-    "_privacyInfoModal.html" %}
+    <footer>
+      {% include "_footer.html" %}
+    </footer>
+
+    {% include "_privacyInfoModal.html" %}
+    {% include "_termsConditionsModal.html" %}
+    {% include "_bugReportModal.html" %}
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -52,7 +57,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/custom.css" />
-    <script src="js/header.js" defer></script>
-    <script type="module" src="js/forms.js" defer></script>
+    <script type="module" src="js/service.js" defer></script>
+    <script type="module" src="js/form.js" defer></script>
+    <script type="module" src="js/textAreaAutoExpand.js" defer></script>
+    <script type="module" src="js/normalizePhoneNumber.js" defer></script>
+    <script type="module" src="js/disabledButtons.js" defer></script>
   </body>
 </html>

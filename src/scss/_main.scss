@@ -1,0 +1,161 @@
+:root {
+  --header-height: 15vh;
+
+  --neon-pink: #d300d3;
+  --neon-blue: rgba(0, 217, 255);
+
+  --border-radius: 18px;
+
+  --size-1: 1.2rem;
+  --size-2: 1.5rem;
+  --size-3: 1.8rem;
+}
+
+.size-1 {
+  font-size: var(--size-1);
+}
+
+.size-2 {
+  font-size: var(--size-2);
+}
+
+.size-3 {
+  font-size: var(--size-3);
+}
+
+.neon-pink {
+  color: var(--neon-pink);
+}
+
+.neon-blue {
+  color: var(--neon-blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(35, 35, 35);
+}
+
+header, footer {
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  height: var(--header-height);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.nav .logo img {
+  height: 10vh;
+  object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgba(0, 217, 255);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.presentationImage {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.presentationImage img {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bordered {
+  border: 1px solid #9ca3af;
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+
+.modernButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 28px;
+  border-radius: var(--border-radius);
+  background-color: rgba(148, 148, 148, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.modernButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #9ca3af;
+}
+
+.modernButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 45%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: translateX(-140%);
+  transition: transform 0.8s ease;
+}
+
+.modernButton:hover::before {
+  transform: translateX(240%);
+}
+
+.selectableButton {
+  align-items: center;
+  background-color: rgba(148, 148, 148, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selectableButton:hover {
+  border-color: #9ca3af;
+}
+
+.selectableButton.active {
+  background-color: rgba(148, 148, 148, 0.6);
+}
+
+.selectableButton i {
+  font-size: var(--size-2);
+  margin-bottom: 10px;
+}
+
+.nav a {
+  padding: 10px;
+  border: none;
+  gap: 15px;
+  font-size: var(--size-1);
+}

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telofixo - Homepage</title>
+    <title>MicheleGaro.it - Homepage</title>
     <meta
       name="description"
-      content="Assistenza PC e consulenza informatica per privati e aziende. Risoluzione problemi, ottimizzazione e supporto dedicato."
+      content="Assistenza tecnica per PC e sistemi informatici."
     />
 
     <link
@@ -27,7 +27,7 @@
 
     <link
       rel="shortcut icon"
-      href="src/public/favicon.ico"
+      href="favicon.ico"
       type="image/x-icon"
     />
     
@@ -35,487 +35,357 @@
 
   <body>
     <header>
-  <nav class="container">
-    <div class="logo neon-blue">
-      <a
-        href="http://michelegarofalo.gt.tc"
-        style="font-weight: 400; font-size: 2.5rem; text-decoration: none"
-        >Telofixo.it</a
-      >
-    </div>
-    <div class="nav-buttons">
-      <a class="disabled-btn" href="http://www.michelegarofalo.gt.tc/about"
-        >Notizie</a
-      >
-      <a href="#features-prices">Prezzi e servizi</a>
-      <a href="http://www.michelegarofalo.gt.tc/about"
-        >Chi siamo</a
-      >
-      <a href="#faq">FAQ</a>
-    </div>
-    <div class="burger" id="burger-menu">
-      <i class="bi bi-list"></i>
-    </div>
-  </nav>
-</header>
-
-    <main>
-      <section id="form-section">
-  <div class="container">
-    <div class="row pt-4" id="service">
-      <div class="col-xl-7 col-12">
-        <div class="form-section-content fade show">
-          <h1 class="neon-blue" style="font-size: 2rem;"><i class="bi bi-info-circle"></i> Richiedi subito una consulenza!</h1>
-          <ul style="font-size: 1.2rem">
-            <li><p>Compila il form</p></li>
-            <li><p>Mettiamoci in contatto</p></li>
-            <li><p>Incontriamoci</p></li>
-            <li><p>Accendi il tuo PC e gioca</p></li>
-          </ul>
-          <button id="openFormBtn" class="btn">Compila il form</button>
-        </div>
-
-        <div class="form-section-form fade d-none" id="main-form">
-          <h2 class="neon-blue">Di cosa hai bisogno?</h2>
-          <ul style="font-size: 1.2rem">
-            <li><p class="form-section-form-btn" data-choice="newpc">Ho bisogno di un nuovo PC</p></li>
-            <li><p class="form-section-form-btn" data-choice="assistance">Ho bisogno di assistenza</p></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-xl-5 col-12">
-        <div class="form-section-image">
-          <img src="/assets/images/gaming-desk.jpg" fetchpriority="high"/>
-        </div>
-      </div>
-    </div>
+      <div class="nav">
+  <a href="/" class="logo">
+    <img src="/assets/images/logo.png" alt="Logo" />
+  </a>
+  <div>
+    <a
+      class="modernButton"
+      href="https://github.com/rhaastrake"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="bi bi-github"> GitHub</i></a
+    >
+    <a
+      class="modernButton"
+      href="https://www.linkedin.com/in/michele-garofalo-1966302b6/"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="bi bi-linkedin"> LinkedIn</i></a
+    >
   </div>
-</section> 
+  <div>
+    <a
+      class="modernButton"
+      data-bs-toggle="modal"
+      data-bs-target="#bugReportModal"
+      ><i class="bi bi-bug"> Segnala un bug</i></a
+    >
+  </div>
+</div>
 
-      <hr class="container" />
-
-      <section class="news" id="news">
-  <div class="container">
-    <h2 class="neon-blue"><i class="bi bi-envelope-paper"></i> Notizie</h2>
-    <div class="row pb-5">
-      <div class="col-xl-6 col-12">
-        <a class="clickable disabled-btn news-card mb-3">
-          <div class="row">
-            <div class="col-8">
-              <h3>Giuseppe Pallone, volevo dirti che...</h3>
-            </div>
-            <div class="col-2">
-              <img
-                src="assets/images/elio.jpg"
-                style="width: 100%; height: auto; border-radius: 5px"
-              />
-            </div>
-            <div class="col-2" style="text-align: right">
-              <h6>01/09/25</h6>
-              <h6>Antonio</h6>
-            </div>
-            <div>
-              <p class="mt-3">
-                Da aggiungere un'anteprima dell'ultima notizia che venendo
-                cliccata ti porta ad una pagina dedicata
-              </p>
-              <p>Prova riga 3</p>
-              <p>Prova riga 4</p>
-            </div>
-          </div>
-          <div class="news-overlay">Leggi tutto</div>
-        </a>
-      </div>
-
-      <div class="col-xl-6 col-12">
-        <a class="clickable disabled-btn news-card mb-3">
-          <div class="row">
-            <div class="col-8">
-              <h3>Giuseppe Pallone miete altre vittime a Modugno</h3>
-            </div>
-            <div class="col-2">
-              <img
-                src="assets/images/elio.jpg"
-                style="width: 100%; height: auto; border-radius: 5px"
-              />
-            </div>
-            <div class="col-2" style="text-align: right">
-              <h6>02/09/25</h6>
-              <h6>Kekko</h6>
-            </div>
-            <div>
-              <p class="mt-3">
-                Da aggiungere un'anteprima dell'ultima notizia che venendo
-                cliccata ti porta ad una pagina dedicata
-              </p>
-              <p>Prova riga 3</p>
-              <p>Prova riga 4</p>
-            </div>
-          </div>
-          <div class="news-overlay">Leggi tutto</div>
-        </a>
+    </header>
+    <main class="container">
+      <section class="presentationSection my-3 py-3">
+  <div class="row">
+    <div class="col-xl-6 col-12">
+      <h1>Michelegaro.it</h1>
+      <p class="size-3">Assistenza tecnica per PC e sistemi informatici.</p>
+      <hr style="color: transparent" />
+      <p class="size-1">
+        Sono un appassionato di informatica, autodidatta, disponibile a fornire
+        supporto tecnico e spiegazioni su misura per le tue esigenze.
+      </p>
+      <a class="modernButton disabledButton">Curriculum Vitae</a>
+      <p>Prossimamente...</p>
+      <hr style="color: transparent" />
+      <p class="size-1">
+        Scopri tutti i servizi disponibili e le soluzioni che posso offrirti per
+        ottimizzare, migliorare o realizzare i tuoi progetti informatici. Ogni
+        attività viene valutata e concordata singolarmente con il cliente.
+      </p>
+      <a class="modernButton" href="#serviceSection"
+        >Vai ai servizi
+        <i class="bi bi-arrow-down" style="margin-left: 5px"></i
+      ></a>
+    </div>
+    <div class="col-xl-6 col-12 mt-5 mt-md-0">
+      <div class="presentationImage">
+        <img src="/assets/images/gaming-desk2.jpg" fetchpriority="high" />
       </div>
     </div>
   </div>
 </section>
- <section class="features-prices" id="features-prices">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-6 col-12">
-        <h2 class="neon-blue">Perchè scegliere noi</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <i class="bi bi-activity neon-pink"></i>
-            <h3 class="neon-blue">Efficienza</h3>
-            <p>Ci teniamo ad essere veloci e precisi cercando sempre di guidare il cliente verso la scelta più conveniente possibile</p>
-          </div>
-          <div class="feature-card">
-            <i class="bi bi-chat-dots-fill neon-pink"></i>
-            <h3 class="neon-blue">Reperibilità</h3>
-            <p>Siamo disponibili a chiarire qualsiasi dubbio, in qualsiasi momento, sia prima che dopo l’accordo, per garantire la migliore esperienza</p>
-          </div>
-        </div>
+
+      <section id="serviceSection" class="my-3 py-3">
+  <h2>Servizi</h2>
+  <div class="row bordered text-center">
+    <div class="serviceSelectionBox col-xl-6 col-12">
+      <div class="modernButton selectableButton serviceButton">
+        <i class="bi bi-cpu" style="color: rgb(40, 149, 226)"></i>
+        <h6>Assistenza hardware/software</h6>
+        <p class="neon-blue">
+          Pulizia e/o formattazione e aggiornamento componenti
+        </p>
       </div>
-
-
-
-
-
-      <div class="col-xl-6 col-12">
-        <h2 class="neon-blue">Prezzi e servizi</h2>
-        <div class="prices">
-          <h5><i class="bi bi-amazon"></i> Guida all'acquisto: €10</h5>
-          <p class="pt-2">
-            Dedicheremo il tempo necessario, di persona o telefonicamente per
-            aiutarvi a fare la scelta più giusta per le vostre esigenze
-          </p>
-          <hr/>
-          <h5><i class="bi bi-pc-display"></i> Assemblaggio: €20</h5>
-          <p class="pt-2">
-            Ci accorderemo per incontrarci e dedicare del tempo all'assemblaggio
-            dei vari componenti per rendere il PC funzionante al 100%
-          </p>
-          <hr/>
-          <h5><i class="bi bi-person-fill-gear"></i> Assistenza: Variabile</h5>
-          <p class="pt-2">
-            Faremo una chiaccherata per capire il problema e solo dopo si
-            deciderà un prezzo in base alla difficcoltà. Se non dovessimo riuscire
-            a risolvere il problema il servizio sarà gratuito
-          </p>
-        </div>
+      <hr />
+      <div class="modernButton selectableButton serviceButton">
+        <i class="bi bi-amazon" style="color: rgb(255, 197, 38)"></i>
+        <h6>Acquisto e/o assemblaggio</h6>
+        <p class="neon-blue">
+          Consulenza, guida all’acquisto, assemblaggio su misura
+        </p>
       </div>
+      <hr />
+      <div class="modernButton selectableButton serviceButton">
+        <i class="bi bi-discord" style="color: rgba(87, 100, 242)"></i>
+        <h6>Server discord</h6>
+        <p class="neon-blue">
+          Server Discord multicategoria con stanze automatizzate
+        </p>
+      </div>
+      <hr />
+      <div class="modernButton selectableButton serviceButton">
+        <i class="bi bi-window" style="color: rgb(223, 73, 73)"></i>
+        <h6>Siti web / applicazioni</h6>
+        <p class="neon-blue">Piccoli progetti su misura</p>
+      </div>
+    </div>
+    <div class="selectedServiceBox col-xl-6 col-12 mt-5 mt-md-0">
+      <h3 class="serviceTitle">Seleziona un servizio...</h3>
+      <hr style="color: transparent" />
+      <hr />
+      <div class="selectedServiceOverview">
+        <p class="serviceDescription size-1 d-none"></p>
+        <hr style="color: transparent" />
+        <hr style="color: transparent" />
+        <p class="serviceStartButton modernButton d-none">
+          Richiedi un preventivo
+        </p>
+        <p class="serviceCostDisclaimer d-none">
+          Eventuali compensi saranno concordati privatamente con il cliente in
+          base alla complessità del lavoro.
+        </p>
+      </div>
+      <div class="selectedServiceForm text-start"></div>
     </div>
   </div>
 </section>
- <section class="faq" id="faq">
-  <div class="container">
-    <div class="faq-container">
+
+      <section id="newsSection" class="my-3 py-3">
+  <h2>Notizie</h2>
+  <div class="row bordered text-center">
+    <p class="size-3">Prossimamente...</p>
+  </div>
+</section>
+
+      <section class="my-3 py-3">
+  <div class="row">
+    <div class="col-12">
       <h2 class="neon-blue">Domande Frequenti</h2>
-      <p>Per altre domande: <b>telofixo.it@gmail.com</b></p>
+      <p>Per altre domande: <b>garofalomichele2001@gmail.com</b></p>
 
       <div class="accordion" id="faqAccordion">
+
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="false"
-              aria-controls="collapseOne"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Quali sono i tempi di risposta?
             </button>
           </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingOne"
-            data-bs-parent="#faqAccordion"
-          >
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>
-                Rispondo appena possibile, solitamente entro poche ore,
-                compatibilmente con i miei impegni
-              </p>
+              Rispondo appena possibile, solitamente entro poche ore, compatibilmente con i miei impegni.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
               Come posso pagare?
             </button>
           </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#faqAccordion"
-          >
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>Accetto contanti, bonifico e paypal</p>
-              <p><b>IMPORTANTE:</b> <u>Non ho modo di dare alcuna ricevuta!</u></p>
+              Accetto contatti e pagamenti tramite metodi concordati privatamente con il cliente.
+              <p><strong>Nota legale:</strong> essendo prestazione occasionale, i compensi devono essere documentati tramite ricevuta per prestazione occasionale, emessa per ogni intervento e conservata ai fini fiscali.</p>
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
               Devo portare fisicamente il PC?
             </button>
           </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#faqAccordion"
-          >
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>
-                Non sempre è necessario: alcuni problemi possono essere risolti
-                da remoto. Se serve un intervento diretto, ci si può accordare
-                anche per un ritiro a domicilio, con rimborso benzina
-              </p>
+              Non sempre è necessario: alcuni problemi possono essere risolti da remoto. Se serve un intervento diretto, ci si può accordare anche per ritiro a domicilio.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              Abito fuori dalla puglia, cosa posso fare?
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Abito fuori dalla Puglia, cosa posso fare?
             </button>
           </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFour"
-            data-bs-parent="#faqAccordion"
-          >
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>
-                Contattami comunque. Se il problema si può risolvere a distanza,
-                ti aiuterò. Altrimenti, posso darti consigli utili gratuitamente
-              </p>
+              Contattami comunque. Se il problema si può risolvere a distanza, ti aiuterò. Altrimenti, posso fornire indicazioni utili su come procedere.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
-              aria-expanded="false"
-              aria-controls="collapseFive"
-            >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               Come vengono conservati i dati che invio?
             </button>
           </h2>
-          <div
-            id="collapseFive"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingFive"
-            data-bs-parent="#faqAccordion"
-          >
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
+              Tutti i dati forniti vengono inviati via email a <b>garofalomichele2001@gmail.com</b> e trattati nel rispetto della privacy.
+              <p><strong>Su richiesta via email, i dati verranno eliminati.</strong></p>
               <p>
-                Tutti i dati forniti vengono inviati via email a
-                <b>telofixo.it@gmail.com</b> e trattati nel rispetto della
-                privacy
-              </p>
-              <p>
-                <b>Se richiesto via email, i dati verranno elliminati</b>
-              </p>
-              <p>
-                <a
-                  type="button"
-                  class="btn-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#privacyInfoModal"
-                >
+                <button type="button" class="modernButton" data-bs-toggle="modal" data-bs-target="#privacyInfoModal">
                   Informativa sulla privacy
-                </a>
+                </button>
               </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </section>
 
     </main>
-    <footer class="footer-custom bg-dark text-light">
-  <div class="container">
-    <div class="row text-center text-md-start align-items-start">
-
-      <!-- Contatti -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-geo-alt"></i> Contatti</h4>
-        <p>Telofixo.it@gmail.com</p>
-      </div>
-
-      <!-- Social -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-globe"></i> Social</h4>
-        <div class="social-links">
-          <a href="#"><i class="bi bi-telegram"></i> Telegram</a>
-          <a href="#"><i class="bi bi-discord"></i> Discord</a>
-          <a href="#"><i class="bi bi-github"></i> Github</a>
-          <a href="#"><i class="bi bi-linkedin"></i> Linkedin</a>
-        </div>
-      </div>
-
-      <!-- Altro -->
-      <div class="col-12 col-md-4 footer-col">
-        <h4 class="neon-blue"><i class="bi bi-tools"></i> Altro</h4>
-        <div class="extrabuttons">
-          <div><a class="clickable disabled-btn">Admin</a></div>
-          <div><a class="clickable disabled-btn">Segnala un bug</a></div>
-          <div>
-            <a class="clickable" data-bs-toggle="modal" data-bs-target="#privacyInfoModal">
-              Informativa privacy
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="copyright text-center mt-4">
-      <i class="bi bi-c-circle"></i> 2025 Telofixo.it | Tutti i diritti riservati
-    </div>
+    <footer>
+      <div class="nav row">
+  <div class="col-xl-3 col-12">
+    <p>Copyright © 2026 Michele Garofalo. Tutti i diritti riservati.</p>
+    <p>
+      Prestazione occasionale.
+    </p>
   </div>
-</footer>
- <div class="modal fade" id="bugReportModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-dark text-light">
-      <div class="modal-header border-bottom-0">
-        <h5 class="modal-title neon-blue">Segnala un bug</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Chiudi"
-        ></button>
-      </div>
-
-      <div class="modal-body">
-        <form
-          id="report-bug-form"
-          class="needs-validation"
-          name="bugReportForm"
-          method="POST"
-          novalidate
-        >
-          <input type="hidden" name="formType" value="bugReportForm" />
-
-          <div class="d-flex align-items-center">
-            <span class="bi bi-envelope me-2 fs-3"></span>
-            <div class="form-floating flex-grow-1">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="La tua email"
-                required
-              />
-              <label for="email">La tua email</label>
-            </div>
-          </div>
-
-          <div class="d-flex align-items-center pt-3">
-            <span class="bi bi-text-left me-2 fs-3"></span>
-            <div class="form-floating flex-grow-1">
-              <input
-                type="text"
-                class="form-control"
-                id="bugDetails"
-                name="bugDetails"
-                placeholder="Descrivi il bug"
-                required
-              />
-              <label for="bugDetails">Descrivi il problema</label>
-            </div>
-          </div>
-
-          <div class="modal-footer border-top-0">
-            <button type="submit" class="btn">Invia segnalazione</button>
-            <button type="button" class="btn" data-bs-dismiss="modal">
-              Chiudi
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
+  <div class="col-xl-3 col-12">
+    <a href="#serviceSection">Servizi</a><br />
+    <a href="#termsConditionsModal" data-bs-toggle="modal"
+      >Termini e condizioni</a>
+    <br>
+    <a href="#privacyInfoModal" data-bs-toggle="modal">Privacy</a>
+  </div>
+  <div class="col-xl-3 col-12">
+    <a href="https://github.com/rhaastrake" target="_blank">GitHub</a><br />
+    <a href="https://www.linkedin.com/in/michele-garofalo-1966302b6/" target="_blank">LinkedIn</a><br />
   </div>
 </div>
- <div
+
+    </footer>
+
+    <div
   class="modal fade"
   id="privacyInfoModal"
   tabindex="-1"
   aria-labelledby="privacyInfoModalLabel"
   aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
 >
   <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content bg-dark text-light">
+    <div class="modal-content">
       <div class="modal-header border-bottom-0">
-        <h2 class="modal-title neon-blue" id="privacyInfoModalLabel">
+        <h2 class="modal-title" id="privacyInfoModalLabel">
           Informativa sulla privacy
         </h2>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="modal"
-          aria-label="Chiudi"
-        ></button>
       </div>
 
       <div class="modal-body">
         <p>
-          Per rispondere alle tue richieste, raccogliamo solo alcune informazioni dal form, come nome, cognome, numero di telefono e città di domicilio. Le risposte alle altre domande non includono dati sensibili.
+          Per rispondere alle tue richieste, raccogliamo solo alcune informazioni tramite il form: 
+          nome, cognome, numero di telefono e città di domicilio. 
+          Non raccogliamo altri dati sensibili.
         </p>
-        <p>I tuoi dati:</p>
+
+        <p>I tuoi dati personali saranno trattati come segue:</p>
         <ul>
-          <li>Servono solo per contattarti e gestire la richiesta;</li>
-          <li>Vengono inviati via email a <span class="neon-blue">telofixo.it@gmail.com;</span></li>
-          <li>Non vengono conservati in database e non saranno condivisi con terzi;</li>
-          <li>Puoi chiedere la cancellazione dei tuoi dati in qualsiasi momento scrivendo alla stessa email.</li>
+          <li>Verranno utilizzati esclusivamente per contattarti e gestire la tua richiesta;</li>
+          <li>Il numero di telefono sarà usato solo per contatti diretti da parte mia;</li>
+          <li>I dati vengono inviati via email a <strong>garofalomichele2001@gmail.com</strong> e non conservati in database permanenti;</li>
+          <li>I dati non saranno condivisi con terzi;</li>
+          <li>Puoi esercitare in qualsiasi momento i tuoi diritti di accesso, rettifica e cancellazione scrivendo alla stessa email.</li>
         </ul>
-        <p>In breve: usiamo i dati solo per aiutarti, nulla di più!</p>
+
+        <p>
+          <strong>Consenso:</strong> inviando un modulo dichiari di aver letto e accettato questa informativa, acconsentendo al trattamento dei dati per le finalità sopra indicate.
+        </p>
+
+        <p>In sintesi: i tuoi dati vengono utilizzati solo per aiutarti e gestire la tua richiesta, nulla di più.</p>
       </div>
 
       <div class="modal-footer border-top-0">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+        <button type="button" class="modernButton" data-bs-dismiss="modal">
+          Chiudi
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div
+  class="modal fade"
+  id="termsConditionsModal"
+  tabindex="-1"
+  aria-labelledby="termsConditionsModalLabel"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h2 class="modal-title" id="termsConditionsModalLabel">
+          Termini e condizioni
+        </h2>
+      </div>
+
+      <div class="modal-body">
+        <h4>Informazioni generali</h4>
+        <p>
+          I servizi offerti sono forniti in forma di prestazione occasionale, da
+          un appassionato di informatica e autodidatta, senza Partita IVA. Tutte
+          le attività vengono valutate e concordate singolarmente con il
+          cliente.
+        </p>
+
+        <h4>Servizi offerti</h4>
+        <p>
+          Il sito fornisce assistenza tecnica, consulenza informatica, supporto
+          per configurazione di server Discord e manutenzione di siti web o
+          applicazioni. Le descrizioni dei servizi sono puramente informative;
+          non vengono pubblicati prezzi o listini.
+        </p>
+
+        <h4>Responsabilità</h4>
+        <p>
+          Le prestazioni sono fornite a titolo informativo e tecnico. Non
+          garantiamo risultati specifici e non ci assumiamo responsabilità per
+          eventuali danni derivanti dall'uso dei consigli o interventi forniti.
+          Ogni intervento viene concordato caso per caso.
+        </p>
+
+        <h4>Privacy e dati personali</h4>
+        <p>
+          I dati raccolti tramite il sito (nome, cognome, numero di telefono,
+          città di domicilio) vengono utilizzati esclusivamente per contattare
+          il cliente e gestire la richiesta. Per maggiori informazioni, consulta
+          l'
+          <a data-bs-toggle="modal" data-bs-target="#privacyInfoModal"
+            ><u style="cursor: pointer">informativa sulla privacy</u></a
+          >.
+        </p>
+
+        <h4>Contatti</h4>
+        <p>
+          Per domande, chiarimenti o richieste di cancellazione dei dati, puoi
+          contattare il titolare dei dati all'indirizzo email:
+          <strong>garofalomichele2001@gmail.com</strong>.
+        </p>
+
+        <h4>Modifiche ai termini</h4>
+        <p>
+          Ci riserviamo il diritto di aggiornare questi termini e condizioni.
+          Eventuali modifiche saranno pubblicate sul sito.
+        </p>
+      </div>
+
+      <div class="modal-footer border-top-0">
+        <button type="button" class="modernButton" data-bs-dismiss="modal">
           Chiudi
         </button>
       </div>
@@ -523,6 +393,42 @@
   </div>
 </div>
 
+    <div
+  class="modal fade"
+  id="bugReportModal"
+  tabindex="-1"
+  aria-labelledby="bugReportModal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h2 class="modal-title" id="bugReportModal">
+          Segnala un bug
+        </h2>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="needs-validation" novalidate>
+    <input type="hidden" name="formType" value="bugReport">
+      <div class="form-floating mb-3">
+        <textarea class="form-control auto-expand" id="details" name="details" placeholder="Descrizione del problema" style="height:100px; resize:none;" required></textarea>
+        <label for="details">Descrizione del problema</label>
+      </div>
+      <p class="size-1">Ci tengo a ringraziare in anticipo per ogni contributo :)</p>
+      <button class="modernButton" type="submit">Invia segnalazione</button>
+    </form>
+
+      <div class="modal-footer border-top-0">
+        <button type="button" class="modernButton" data-bs-dismiss="modal">
+          Chiudi
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -530,7 +436,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="/css/custom.css" />
-    <script src="js/header.js" defer></script>
-    <script type="module" src="js/forms.js" defer></script>
+    <script type="module" src="js/service.js" defer></script>
+    <script type="module" src="js/form.js" defer></script>
+    <script type="module" src="js/textAreaAutoExpand.js" defer></script>
+    <script type="module" src="js/normalizePhoneNumber.js" defer></script>
+    <script type="module" src="js/disabledButtons.js" defer></script>
   </body>
 </html>

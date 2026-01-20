@@ -3,16 +3,19 @@
     "@11ty/eleventy": "^3.1.2",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
+    "concurrently": "^9.2.1",
     "sass": "^1.91.0"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
   },
-"scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preBuild": "sass ./src/scss/custom.scss ./src/css/custom.css",
     "postBuild": "eleventy",
+    "serve:bootstrap": "sass --watch ./src/scss/custom.scss ./src/css/custom.css",
+    "serve:eleventy": "eleventy --serve --quiet",
     "build": "npm run preBuild && npm run postBuild",
-    "serve": "npm run build && concurrently \"eleventy --serve --quiet\" \"sass --watch ./src/scss/custom.scss ./src/css/custom.css\""
+    "serve": "npm run build && concurrently \"npm run serve:eleventy\" \"npm run serve:bootstrap\""
   }
 }
