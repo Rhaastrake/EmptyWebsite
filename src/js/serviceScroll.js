@@ -14,9 +14,6 @@ function updateServiceButtonLinks() {
       };
       btn._scrollHandler = scrollHandler;
       btn.addEventListener("click", scrollHandler);
-      btn.style.cursor = "pointer";
-    } else {
-      btn.style.cursor = "default";
     }
   });
 }
