@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (value.startsWith("+")) {
       value = "+" + value.slice(1).replace(/\+/g, "");
-      if (value.length > 3) {
+      if (value.length > 4) {
         value = value.slice(0, 3) + " " + value.slice(3);
       }
     } else {

@@ -17420,13 +17420,8 @@ textarea.form-control-lg {
   content: "爛";
 }
 
-.label {
-  color: red;
-}
-
 :root {
   --header-height: 15vh;
-  --neon-pink: #d300d3;
   --neon-blue: rgba(0, 217, 255);
   --border-radius: 18px;
   --size-1: 1.2rem;
@@ -17446,10 +17441,6 @@ textarea.form-control-lg {
   font-size: var(--size-3);
 }
 
-.neon-pink {
-  color: var(--neon-pink);
-}
-
 .neon-blue {
   color: var(--neon-blue);
 }
@@ -17463,7 +17454,8 @@ body {
   background-color: rgb(35, 35, 35);
 }
 
-header, footer {
+header,
+footer {
   background-color: rgb(18, 18, 18);
   display: flex;
   height: var(--header-height);
@@ -17472,6 +17464,14 @@ header, footer {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+footer {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav {
@@ -17580,6 +17580,16 @@ h2, .h2 {
   border: none;
   gap: 15px;
   font-size: var(--size-1);
+}
+
+.form-floating > label {
+  color: rgba(255, 166, 0, 0.877);
+}
+
+.form-select, .form-control {
+  color: rgba(255, 166, 0, 0.877);
+  background-color: rgb(59, 59, 59);
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=custom.css.map */

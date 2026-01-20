@@ -28,9 +28,8 @@ Il servizio include consigli pratici, interventi mirati e spiegazioni chiare, la
   <input type="hidden" name="formType" value="assistance">
 
   <div class="mb-3">
-    <label for="pcType" class="form-label">Si tratta di un PC fisso o portatile? *</label>
     <select class="form-select" name="pcType" id="pcType" required>
-      <option value="" selected disabled>Seleziona...</option>
+      <option value="" selected disabled>Si tratta di un PC fisso o portatile? *</option>
       <option value="desktop">Fisso</option>
       <option value="laptop">Portatile</option>
     </select>
@@ -38,9 +37,8 @@ Il servizio include consigli pratici, interventi mirati e spiegazioni chiare, la
 
   <input type="hidden" name="serviceSpecification" value="assistance">
   <div class="mb-3">
-    <label for="serviceSpecification" class="form-label">Di cosa si tratta? *</label>
     <select class="form-select" name="serviceSpecification" id="serviceSpecification" required>
-      <option value="" selected disabled>Seleziona...</option>
+      <option value="" selected disabled>Di cosa si tratta? *</option>
       <option value="noBoot">Il PC non si accende</option>
       <option value="software">Aiuto con uno o più programmi</option>
       <option value="cleaning">Pulizia</option>
@@ -206,7 +204,7 @@ Il servizio è pensato per aiutarti a mantenere i tuoi progetti online efficient
 
 
 
-      
+
       //
       // Mostra il form corrispondente al servizio selezionato quando si clicca il pulsante
       //
