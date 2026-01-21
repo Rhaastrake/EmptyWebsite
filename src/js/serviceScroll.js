@@ -1,5 +1,5 @@
 function updateServiceButtonLinks() {
-  const buttons = document.querySelectorAll(".serviceButton");
+  const buttons = document.querySelectorAll(".serviceButton, .serviceStartButton");
   const target = document.querySelector(".selectedServiceBox");
 
   buttons.forEach((btn) => {
