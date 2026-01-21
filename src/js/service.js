@@ -266,7 +266,7 @@ Il servizio è pensato per aiutarti a mantenere i tuoi progetti online efficient
 
   <!-- Scopo del sito -->
   <div class="form-floating mb-3">
-    <textarea class="form-control auto-expand" id="details" name="details" placeholder="Qual è lo scopo il sito? *" style="height:100px; resize:none;"></textarea>
+    <textarea class="form-control auto-expand" id="details" name="details" placeholder="Qual è lo scopo il sito? *" style="height:100px; resize:none;" required></textarea>
     <label for="details">Qual è lo scopo il sito? *</label>
   </div>
 
