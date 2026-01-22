@@ -190,7 +190,7 @@ Tutte le configurazioni e le modifiche vengono discusse direttamente con te, gar
   <input type="hidden" name="formType" value="discord">
 
   <p class="size-1">
-    Non esistono domande preimpostate da fare per un server discord
+    Non esistono domande preimpostate da fare per un server Discord
   </p>
   <p class=size-1>
     Parlami liberamente di tuttò ciò che vorresti introdurre
