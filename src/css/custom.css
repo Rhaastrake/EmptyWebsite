@@ -17620,19 +17620,18 @@ h2, .h2 {
 }
 
 @media (max-width: 1199.98px) {
-  .text-center-md-down {
-    text-align: center !important;
-  }
-  .nav-links a {
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-  .nav-external-links, .nav-extra-links {
+  .nav-links,
+  .nav-external-links,
+  .nav-extra-links {
     display: none;
   }
   .burgerButton {
     display: block !important;
   }
+}
+.sidebar {
+  min-height: 85vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=custom.css.map */
