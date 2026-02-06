@@ -4,6 +4,7 @@ export function showNotification(text, duration = "default") {
   if (currentNotification) currentNotification.remove();
 
   if (duration === "default") duration = 5000;
+  if (duration === "permanent") duration = 999999;
 
 
   const box = document.createElement("div");

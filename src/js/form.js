@@ -26,7 +26,7 @@ import { showNotification } from "./notification.js";
             Invio in corso...
             <div class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true"></div>
           </div>`,
-        "default"
+        "permanent"
       );
 
       fetch("/php/sendForm.php", {
@@ -35,6 +35,7 @@ import { showNotification } from "./notification.js";
       })
         .then((response) => response.text())
         .then((data) => {
+          showNotification(data, "default");
 
           if (data.includes("Dati inviati con successo")) {
             form.reset();
