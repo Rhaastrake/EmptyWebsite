@@ -77,13 +77,13 @@ try {
     $mail->Encoding   = 'base64';+
 
     $mail->setFrom(MAIL_USERNAME, MAIL_FROM_NAME);
-    $mail->addAddress(MAIL_USERNAME, 'Michelegaro.it');
+    $mail->addAddress(MAIL_USERNAME, 'WebFixer.it');
 
     $mail->isHTML(true);
 
 
 
-    $body  = "<h2>Nuova richiesta dal sito Michelegaro.it</h2>";
+    $body  = "<h2>Nuova richiesta dal sito WebFixer.it</h2>";
 
     //
     //Basic informations
@@ -143,12 +143,12 @@ try {
     }
 
     $mail->Subject = match($formType) {
-        'assistance'    => 'Richiesta assistenza | Michelegaro.it',
-        'purchaseGuide' => 'Richiesta nuovo PC | Michelegaro.it',
-        'discord'       => 'Richiesta server discord | Michelegaro.it',
-        'application'   => 'Richiesta applicazione | Michelegaro.it',
-        'bugReport'     => 'Segnalazione bug | Michelegaro.it',
-        default         => 'Richiesta generica | Michelegaro.it',
+        'assistance'    => 'Richiesta assistenza | WebFixer.it',
+        'purchaseGuide' => 'Richiesta nuovo PC | WebFixer.it',
+        'discord'       => 'Richiesta server discord | WebFixer.it',
+        'application'   => 'Richiesta applicazione | WebFixer.it',
+        'bugReport'     => 'Segnalazione bug | WebFixer.it',
+        default         => 'Richiesta generica | WebFixer.it',
     };
 
 
