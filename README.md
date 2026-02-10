@@ -3,7 +3,7 @@
 Inside this repository, you will find a configuration to builda dinamyc website
 using partials of html and css files including phpmailer and filterable bootstrap framework components
 
-HOW TO CLONE THE SITE ###############################
+########### HOW TO CLONE THE SITE ###############################
 
 1) Install Node.js (version 18 for compatiibility)
 
