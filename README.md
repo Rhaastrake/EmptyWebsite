@@ -3,6 +3,8 @@
 Inside this repository, you will find a configuration to builda dinamyc website
 using partials of html and css files including phpmailer and filterable bootstrap framework components
 
+
+
 ########### HOW TO CLONE THE SITE ###############################
 
 1) Install Node.js (version 18 for compatiibility)
@@ -12,6 +14,8 @@ using partials of html and css files including phpmailer and filterable bootstra
 3) Run "cd EmptyWebsite", then "npm install"
 
 4) Run "npm run serve" and visit "localhost:8080"
+
+
 
 ########### HOW TO MODIFY THE SITE ###############################
 
