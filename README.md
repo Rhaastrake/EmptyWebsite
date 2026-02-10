@@ -1,12 +1,5 @@
-(8) WHAT'S INSIDE THE REPO
-
-(15) HOW TO CLONE THE SITE
-
-(27) HOW TO MODIFY THE SITE
-
 ######################################################
-                WHAT'S INSIDE THE REPO
-######################################################
+WHAT'S INSIDE THE REPO
 
 Inside this repository, you will find a configuration to builda dinamyc website
 using partials of html and css files including phpmailer and filterable bootstrap framework components
