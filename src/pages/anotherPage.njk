@@ -1,9 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>YourSiteTitle</title>
+---
+title: AnotherPage
+permalink: /anotherPage/
+---
 
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourPageTitle</title>
+
+    <!-- <link rel="stylesheet" href="src/css/style.css" /> -->
+    <!-- CSS -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
     <link
@@ -14,8 +22,9 @@
 
     {% set partials = "src/partials/" %}
   </head>
+
   <body>
-    <h1>404 page</h1>
+    {% include "_partialExample.html" %}
     
 
     <script
@@ -25,7 +34,6 @@
     ></script>
 
     <link rel="stylesheet" href="/css/custom.css" />
-    
-    <script type="module" src="js/script.js" defer></script>
+    <script type="module" src="/js/script.js" defer></script>
   </body>
 </html>

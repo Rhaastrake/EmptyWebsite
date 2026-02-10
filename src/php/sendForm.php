@@ -20,45 +20,12 @@ function safeNum($value) {
 }
 
 
-
-$formType    = clean($_POST['formType'] ?? '');
-
-
 //
-//Basic informations
-//
-$name                   = clean($_POST['name'] ?? '');
-$phoneNumber            = safeNum($_POST['phoneNumber'] ?? '');
-$city                   = clean($_POST['city'] ?? '');
-$details                = clean($_POST['details'] ?? '');
-
-
-//
-//Assistance
-//
-$serviceSpecification   = clean($_POST['serviceSpecification'] ?? '');
-$pcType                 = clean($_POST['pcType'] ?? '');
-
-
-//
-//Purchase guide
-//
-$useType                = clean($_POST['useType'] ?? '');
-$priceRange             = clean($_POST['priceRange'] ?? '');
-$secondHand             = clean($_POST['secondHand'] ?? '');
-$display                = clean($_POST['display'] ?? '');
-
-
-//
-//Discord server
+//Informations
 //
 
-
-//
-//Website / Application
-//
-$dbIntegration          = clean($_POST['dbIntegration'] ?? '');
-$expiryDate             = clean($_POST['expiryDate'] ?? '');
+// $name                   = clean($_POST['name'] ?? '');
+// $phoneNumber            = safeNum($_POST['phoneNumber'] ?? '');
 
 
 $mail = new PHPMailer(true);
@@ -77,79 +44,22 @@ try {
     $mail->Encoding   = 'base64';+
 
     $mail->setFrom(MAIL_USERNAME, MAIL_FROM_NAME);
-    $mail->addAddress(MAIL_USERNAME, 'WebFixer.it');
+    $mail->addAddress(MAIL_USERNAME, 'MAIL USERNAME');
 
     $mail->isHTML(true);
 
 
 
-    $body  = "<h2>Nuova richiesta dal sito WebFixer.it</h2>";
+    $body  = "FILL YOUR MAIL BODY HTML";
 
     //
-    //Basic informations
+    //Informations
     //
-    if (!empty($details)) {
-        $body .= "<h3>Dettagli aggiuntivi:</h3><p>$details</p>";
-    }
-    if (!empty($name)) {
-        $body .= "<h3>Nome:</h3><p>$name</p>";
-    }
-    if (!empty($phoneNumber)) {
-        $body .= "<h3>Telefono:</h3><p>$phoneNumber</p>";
-    }
-    if (!empty($city)) {
-        $body .= "<h3>Città:</h3><p>$city</p>";
-    }
+    // if (!empty($name)) {
+    //     $body .= "Concatenation";
+    // }
 
-    //
-    //Assistance
-    //
-    if (!empty($serviceSpecification)) {
-        $body .= "<h3>Servizio richiesto:</h3><p>$serviceSpecification</p>";
-    }
-    if (!empty($pcType)) {
-        $body .= "<h3>Tipo PC:</h3><p>$pcType</p>";
-    }
-
-    //
-    //Purchase Guide
-    //
-    if (!empty($useType)) {
-        $body .= "<h3>Tipo di utilizzo:</h3><p>$useType</p>";
-    }
-    if (!empty($priceRange)) {
-        $body .= "<h3>Range di prezzo:</h3><p>$priceRange</p>";
-    }
-    if (!empty($secondHand)) {
-        $body .= "<h3>Componenti usati:</h3><p>$secondHand</p>";
-    }
-    if (!empty($display)) {
-        $body .= "<h3>Display:</h3><p>$display</p>";
-    }
-
-    //
-    //Discord Server
-        //Nothing more
-    //
-
-    //
-    //Website / Application
-    //
-    if (!empty($dbIntegration)) {
-        $body .= "<h3>Database:</h3><p>$dbIntegration</p>";
-    }
-    if (!empty($expiryDate)) {
-        $body .= "<h3>Data di scadenza:</h3><p>$expiryDate</p>";
-    }
-
-    $mail->Subject = match($formType) {
-        'assistance'    => 'Richiesta assistenza | WebFixer.it',
-        'purchaseGuide' => 'Richiesta nuovo PC | WebFixer.it',
-        'discord'       => 'Richiesta server discord | WebFixer.it',
-        'application'   => 'Richiesta applicazione | WebFixer.it',
-        'bugReport'     => 'Segnalazione bug | WebFixer.it',
-        default         => 'Richiesta generica | WebFixer.it',
-    };
+    $mail->Subject = "MAIL SUBJECT";
 
 
     $mail->Body    = $body;
@@ -158,9 +68,9 @@ try {
     $mail->send();
 
     http_response_code(200);
-    echo "✅ Dati inviati con successo";
+    echo "✅ Mail sent";
 
 } catch (Exception $e) {
     http_response_code(500);
-    echo "❌ Errore: {$mail->ErrorInfo}";
+    echo "❌ Error: {$mail->ErrorInfo}";
 }

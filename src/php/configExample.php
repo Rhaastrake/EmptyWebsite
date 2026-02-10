@@ -7,9 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Configurazione SMTP
-define('MAIL_USERNAME', '? ? ?'); // account Gmail
-define('MAIL_PASSWORD', '? ? ?');               // App Password Gmail
-define('MAIL_HOST', 'smtp.gmail.com');                     // host SMTP
-define('MAIL_PORT', 587);                                  // porta SMTP
-define('MAIL_FROM_NAME', '? ? ?');                // nome mittente
+define('MAIL_USERNAME', '? ? ?'); // Your email
+define('MAIL_PASSWORD', '? ? ?'); // Email App Password
+define('MAIL_HOST', 'smtp.gmail.com'); // SMTP host
+define('MAIL_PORT', 587);                                  // SMTP port
+define('MAIL_FROM_NAME', '? ? ?');                // Sender name
 ?>
