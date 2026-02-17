@@ -4,11 +4,20 @@ permalink: /anotherPage/
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
   <head>
+
+    {% set partials = "src/partials/" %}
+    {% set pageKey = 'anotherPage' | lower %}
+    {% set pageData = site[anotherPage] %}
+
+    <title>{{ pageData.seo.title or title or site.title }}</title>
+    <meta name="description" content="{{ pageData.seo.description or site.description }}">
+    <meta name="keywords" content="{{ pageData.seo.keywords }}">
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YourPageTitle</title>
 
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
@@ -17,8 +26,6 @@ permalink: /anotherPage/
       href="favicon.ico"
       type="image/x-icon"
     />
-
-    {% set partials = "src/partials/" %}
   </head>
 
   <body>

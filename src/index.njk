@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
   <head>
+
+    {% set partials = "src/partials/" %}
+    {% set pageKey = 'homepage' | lower %}
+    {% set pageData = site[hompage] %}
+
+    <title>{{ pageData.seo.title or title or site.title }}</title>
+    <meta name="description" content="{{ pageData.seo.description or site.description }}">
+    <meta name="keywords" content="{{ pageData.seo.keywords }}">
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YourPageTitle</title>
 
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
@@ -12,8 +21,6 @@
       href="favicon.ico"
       type="image/x-icon"
     />
-
-    {% set partials = "src/partials/" %}
   </head>
 
   <body>
