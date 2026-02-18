@@ -9,7 +9,7 @@ permalink: /anotherPage/
 
     {% set partials = "src/partials/" %}
     {% set pageKey = 'anotherPage' | lower %}
-    {% set pageData = site[anotherPage] %}
+    {% set pageData = site[pageKey] %}
 
     <title>{{ pageData.seo.title or title or site.title }}</title>
     <meta name="description" content="{{ pageData.seo.description or site.description }}">
