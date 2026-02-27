@@ -1,3 +1,3 @@
-export function notification(text = "Default notiification") {
+export function showNotification(text = "Default notiification") {
   alert(text);
 }
