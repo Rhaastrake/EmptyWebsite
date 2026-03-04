@@ -1,22 +1,22 @@
 module.exports = {
-    // site_name: "Webfixer",
-  // title: "Webfixer.it | Assistenza tenica per PC e sistemi informatici",
+  // site_name: "Site name",
+  // title: "Site title",
   // description:
-  //   "Sito vetrina di Michele Garofalo, specializzato in software e assistenza hardware di vario genere",
-  // domain: "webfixer.it",
-  // url: "https://webfixer.it", // It WILL NOT end with a slash /
-  // lang: "it",
-  // author: "Michele Garofalo",
+  //   "Sie description",
+  // domain: "yoursite.com",
+  // url: "https://yoursite.com", // It WILL NOT end with a slash /
+  // lang: "en",
+  // author: "Name and surname",
   // logo: "/assets/img/logo",
   // image_width: [320, 480, 720, 1280, 1920, 2048, 2560, 3840, 4096, 7680],
   // copyright: {
-  //   year: "2026",
-  //   text: "Michele Garofalo - Tutti i diritti riservati",
-  //   privacy: "",//link alla privacy
-  //   cookie: "",//link ai cookie
+  //   year: "0000",
+  //   text: "Copyright text",
+  //   privacy: "",//link to privacy policy
+  //   cookie: "",//link to cookies policy
   //   cookieControls:
-  //     "",//link ai cookie controls
-  //   terms: "",//Link ai termini
+  //     "",//link to cookies management
+  //   terms: "",//Link to terms and conditions
   // },
   homepage: {
     seo: {

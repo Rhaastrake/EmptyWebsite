@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  
   // ✅ Copia diretta delle cartelle
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/css");
@@ -13,7 +14,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   // ✅ Copia tutto il contenuto di public nella root
-  eleventyConfig.addPassthroughCopy({ "src/public": "/" });
+  // eleventyConfig.addPassthroughCopy({ "src/public": "/" });
 
   return {
     dir: {
