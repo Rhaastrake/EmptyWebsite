@@ -1,6 +1,7 @@
 ---
-title: AnotherPage
+title: Another Page
 permalink: /anotherPage/
+css: anotherPage
 ---
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@ permalink: /anotherPage/
   <head>
 
     {% set partials = "src/partials/" %}
-    {% set pageKey = 'homepage' | lower %}
+    {% set pageKey = 'anotherPage' | lower %}
     {% set pageData = site[pageKey] %}
 
     <title>{{ pageData.seo.title or title or site.title }}</title>

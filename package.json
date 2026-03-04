@@ -2,20 +2,20 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1",
-    "concurrently": "^9.2.1"
+    "bootstrap-icons": "^1.13.1"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1",
-    "sass": "^1.97.2"
+    "sass": "^1.97.2",
+    "concurrently": "^9.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preBuild": "sass ./src/scss/custom.scss ./src/css/custom.css",
-    "postBuild": "eleventy",
-    "serve:bootstrap": "sass --watch ./src/scss/custom.scss ./src/css/custom.css",
-    "serve:eleventy": "eleventy --serve --quiet",
-    "build": "npm run preBuild && npm run postBuild",
-    "serve": "npm run build && concurrently \"npm run serve:eleventy\" \"npm run serve:bootstrap\""
+    "build:css": "sass src/scss:src/css --no-source-map",
+    "build:11ty": "eleventy",
+    "build": "npm run build:css && npm run build:11ty",
+
+    "serve:css": "sass --watch src/scss:src/css --no-source-map",
+    "serve:11ty": "eleventy --serve --quiet",
+
+    "serve": "concurrently \"npm run serve:11ty\" \"npm run serve:css\""
   }
 }
