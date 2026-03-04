@@ -20,14 +20,14 @@ module.exports = {
   // },
   homepage: {
     seo: {
-      title: "Page title",
+      title: "Homepage",
       description: "Description",
       keywords: "First keyword, second keyword",
     },
   },
   anotherPage: {
     seo: {
-      title: "Page title",
+      title: "Another Page",
       description: "Description",
       keywords: "First keyword, second keyword",
     },
