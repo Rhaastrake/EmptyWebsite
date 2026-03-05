@@ -10,8 +10,6 @@
         <!-- Page Data based on Page Title -->
         {% set pageKey = title | lower %}
         {% set pageData = site[pageKey] %}
-        {% set headerContent = spro.sproData['header'] %}
-        {% set footerContent = spro.sproData['footer'] %}
 
         <!-- SEO Meta Tags -->
         <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
