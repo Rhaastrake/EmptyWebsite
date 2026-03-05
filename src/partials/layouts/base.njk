@@ -41,7 +41,9 @@
 
         <!-- CSS -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin data-iub-purposes="1" data-cmp-ab="1">
+
         <link rel="preload" href="/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-iub-purposes="1" data-cmp-ab="1">
+
         <link rel="stylesheet" href="/css/pages/{{ title }}.css" />
 
     </head>
@@ -58,8 +60,9 @@
         {% include "global/_footer.html" %}
 
         <!-- SCRIPTS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer data-iub-purposes="1" data-cmp-ab="1"></script>
-        <script type="module" src="/js/script.js" data-iub-purposes="1" data-cmp-ab="1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+        <script type="module" src="/js/pages/{{ title }}.js"></script>
     </body>
 
 </html>

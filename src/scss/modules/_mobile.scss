@@ -1,0 +1,11 @@
+.burger-button {
+  display: none;
+  cursor: pointer;
+}
+
+/* Show burger on small screens */
+@media (max-width: 768px) {
+  .burger-button {
+    display: block;
+  }
+}

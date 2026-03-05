@@ -2,7 +2,7 @@ module.exports = {
   site_name: "Site name",
   title: "Site title",
   description:
-    "Sie description",
+    "Site description",
   domain: "yoursite.com",
   url: "https://yoursite.com", // It WILL NOT end with a slash /
   lang: "en",

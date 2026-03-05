@@ -1,9 +1,10 @@
-@import "../core/bootstrap";
+@import "../modules/bootstrap";
 
 // Import all the modules you need for this page from ../core
-@import "../core/header";
-@import "../core/footer";
+@import "../modules/header";
+@import "../modules/footer";
 
+@import "../modules/mobile";
 
 // Add any other rule that you need for this specific page
 // body {

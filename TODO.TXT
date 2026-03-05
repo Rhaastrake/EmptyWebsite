@@ -1,0 +1,10 @@
+JS:
+
+    Fare il modo che come il css ogni pagina carichi un solo file js che per inglobae altre pezzi più specifici usi le funzioni esportate
+
+
+Favicon e immagini:
+
+    Capire come gestire favicon e immagini di dimensioni diverse in base allo schermo
+
+    
