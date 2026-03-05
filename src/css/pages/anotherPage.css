@@ -6977,3 +6977,14 @@ progress {
     display: none !important;
   }
 }
+header {
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
