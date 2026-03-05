@@ -5,15 +5,13 @@ layout: layouts/base.njk
 {% if title == "homepage" %}
   {% include "_header.html" %}
   {% include "_partialExample.html" %}
+  {% include "homepage/_prova.html" %}
 
-{% elif title == "404" %}
+{% elif title == "anotherpage" %}
   {% include "_partialExample.html" %}
 
-{% elif title == "anotherPage" %}
-{% include "_mimmo.html" %}
-  {% include "_partialExample.html" %}
 
+{# FALLBACK PAGE #}
 {% else %}
-  {# fallback generico per altre pagine #}
-  {% include "_partialExample.html" %}
+  {% include "404/_404.html" %}
 {% endif %}
