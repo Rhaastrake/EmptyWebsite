@@ -6,7 +6,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    echo 'Method not allowed';
+    echo 'Metodo non consentito';
     exit;
 }
 
@@ -75,7 +75,6 @@ $name = clean($_POST['name'] ?? '');
 $mail = new PHPMailer(true);
 
 try {
-
     $mail->isSMTP();
     $mail->Host       = MAIL_HOST;
     $mail->SMTPAuth   = true;
@@ -84,10 +83,10 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = MAIL_PORT;
     $mail->CharSet    = 'UTF-8';
-    $mail->Encoding   = 'base64';
+    $mail->Encoding   = 'base64';+
 
     $mail->setFrom(MAIL_USERNAME, MAIL_FROM_NAME);
-    $mail->addAddress(MAIL_USERNAME, 'MAIL USERNAME');
+    $mail->addAddress(MAIL_USERNAME, 'Webfixer.it');
 
     $mail->isHTML(true);
 
@@ -123,10 +122,9 @@ try {
     $mail->send();
 
     http_response_code(200);
-    echo "✅ Mail sent";
+    echo "✅ Mail has been sent";
 
 } catch (Exception $e) {
-
     http_response_code(500);
     echo "❌ Error: {$mail->ErrorInfo}";
 }
