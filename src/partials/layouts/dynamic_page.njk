@@ -2,12 +2,13 @@
 layout: layouts/base.njk
 ---
 
-{# HTML partials per page #}
+<!-- HTML partials per page -->
+ 
 {% if title == "homepage" %}
-  {% include "homepage/_homepagePartial.html" %}
+  {% include "homepage/_examplePartial.html" %}
 
 {% elif title == "anotherpage" %}
-  {% include "anotherPage/_anotherPagePartial.html" %}
+  {% include "anotherPage/_examplePartial.html" %}
 
 {% else %}
   {% include "404/_404.html" %}

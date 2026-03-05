@@ -1,9 +1,12 @@
+//==========================
+// CSS RULES FOR RESPONSIVE
+//==========================
+
+// This module is dedicated to responsive rules
 .burger-button {
-  display: none;
   cursor: pointer;
 }
 
-/* Show burger on small screens */
 @media (max-width: 768px) {
   .burger-button {
     display: block;

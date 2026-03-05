@@ -1,10 +1,18 @@
-@import "../modules/bootstrap";
+//==========================
+// CSS MODULES IMPORTS
+//==========================
 
 // Import all the modules you need for this page from ../core
+@import "../modules/bootstrap";
+
 @import "../modules/header";
 @import "../modules/footer";
 
 @import "../modules/mobile";
+
+//==========================
+// "homepage" PAGE CUSTOM CSS RULES
+//==========================
 
 // Add any other rule that you need for this specific page
 // body {
