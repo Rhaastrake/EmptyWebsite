@@ -5,10 +5,10 @@ layout: base.njk
 <!-- NJK (HTML) partials per page -->
  
 {% if title == "homepage" %}
-  {% include "homepage/_examplePartial.njk" %}
+  {% include "pages/homepage/_examplePartial.njk" %}
 
 {% elif title == "anotherpage" %}
-  {% include "anotherPage/_examplePartial.njk" %}
+  {% include "pages/anotherPage/_examplePartial.njk" %}
 
 {% else %}
   {% include "404/_404.njk" %}
