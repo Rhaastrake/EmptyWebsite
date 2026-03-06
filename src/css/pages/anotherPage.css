@@ -6592,11 +6592,13 @@ textarea.form-control-lg {
 header {
   height: 15vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #fde0e0;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav {
@@ -6610,23 +6612,29 @@ header {
 .nav a {
   padding: 10px;
   border: none;
+}
+
+.nav-links,
+.nav-extra-links {
+  display: flex;
   gap: 15px;
 }
 
-.logo img {
+.logo {
   height: 10vh;
   object-fit: contain;
 }
 
 main {
-  min-height: calc(100vh - 25vh);
+  background-color: #a3dcff;
 }
 
 footer {
-  min-height: 10vh;
-  max-height: auto;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  background-color: #fde0e0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .burger-button {

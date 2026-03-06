@@ -6,8 +6,9 @@
 @use 'root' as root;
 
 footer {
-    min-height: root.$footer-min-height;
-    max-height: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    background-color: root.$primary;
+    padding-top: root.$header-padding-top;
+    padding-bottom: root.$header-padding-bottom;
 }

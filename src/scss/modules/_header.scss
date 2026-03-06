@@ -8,11 +8,13 @@
 header {
     height: root.$header-height;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: root.$primary;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding-top: root.$header-padding-top;
+    padding-bottom: root.$header-padding-bottom;
 }
 
 .nav {
@@ -24,12 +26,17 @@ header {
 }
 
 .nav a {
-  padding: 10px;
-  border: none;
-  gap: 15px;
+    padding: 10px;
+    border: none;
 }
 
-.logo img {
-  height: 10vh;
-  object-fit: contain;
+.nav-links,
+.nav-extra-links {
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    height: 10vh;
+    object-fit: contain;
 }

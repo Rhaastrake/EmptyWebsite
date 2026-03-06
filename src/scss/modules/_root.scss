@@ -4,12 +4,12 @@
 
 // Import this module to get all the constants that you need in your css using "@use 'root' as root;"
 $header-height: 15vh; // Use: root.$header-height;
-
-$footer-min-height: 10vh;
+$header-padding-top: 10px; // Use: root.$header-padding-top;
+$header-padding-bottom: 10px; // Use: root.$header-padding-bottom;
 
 // Colors
-$primary: #0d6efd;
-$secondary: #6c757d;
+$primary: #fde0e0;
+$secondary: #a3dcff;
 $success: #198754;
 $info: #0dcaf0;
 $warning: #ffc107;
