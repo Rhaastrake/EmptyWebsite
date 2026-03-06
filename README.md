@@ -9,9 +9,9 @@ using partials of html and css files including phpmailer and filterable bootstra
 
 1) Install Node.js (version 18 for compatiibility)
 
-2) Run "git clone https://github.com/Rhaastrake/EmptyWebsite.git"
+2) Run "git clone https://github.com/rhaastrake/berna-stencil.git"
 
-3) Run "cd EmptyWebsite", then "npm install"
+3) Run "cd berna-sdtencil", then "npm install"
 
 4) Run "npm run serve" and visit "localhost:8080"
 
