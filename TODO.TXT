@@ -15,3 +15,15 @@ Commenti e guide:
 Assistant.js:
     
     Sviluppare una console per gestire tutto
+
+
+
+Inserire icone bootstrap
+
+Capire ordine css e js
+Controllare css duplicato
+
+rendere coerente import e use css
+
+Gestire tag main
+
